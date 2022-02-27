@@ -43,7 +43,7 @@ char* solution(int numbers[], size_t numbers_len) {
     memset(answer, 0x00, sizeof(str_len + 1));
     qsort(numbers, numbers_len, sizeof(int), CmpNumber);
     
-    if(numbers[0] != '0')
+    if(numbers[0] != 0)
     {
         for(i = 0; i < numbers_len; i++)
         {
